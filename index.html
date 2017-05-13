@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<!-- ___  __  .___________.________     ____    __    ____  ______   .__   __.   ______ 
+|   ____||  | |           |       /     \   \  /  \  /   / /  __  \  |  \ |  |  /  _____|
+|  |__   |  | `- -|  |- - `- -/  /       \   \/    \/   / |  |  |  | |   \|  | |  |  __  
+|   __|  |  |     |  |       /  /         \            /  |  |  |  | |  . `  | |  | |_ | 
+|  |     |  |     |  |      /  /- - .      \    /\    /   |  ` -'  | |  |\   | |  |__| | 
+|__|     |__|     |__|     /________|       \__/  \__/     \______/  |__| \__|  \______|
+-->
+<head>
+	<title>JS Health Quiz</title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+</head>
+<body>
+<div class="container jumbotron">
+<div class="row col-md-7">
+<div class=" col-sm-11 col-md-9 col-md-offset-6 bg-primary">
+<center>
+<h1 class="text-center">QUIZ RESULTS</h1>
+<img src="http://www.top13.net/wp-content/uploads/2015/10/perfectly-timed-funny-cat-pictures-5.jpg" class="img-responsive">
+<br>
+<div class="text-left col-md-offset-2">
+<script type="text/javascript">
+	function quiz(){//QUIZ BEGIN
+		//QUESTION SECTION BEGIN
+	var qOne = prompt("What is healthier, bananas or french fries?");
+	var qTwo = prompt("Which fruits keeps the doctor away if you have one a day?");
+	var qThree = prompt("Which is the more acidic fruit? Lemons or Pineapples?");
+	var qFour = prompt("Is pizza a vegetable?");
+	var qFive = prompt("Are tomatoes a vegetable or a fruit?");
+	var qSix = prompt("Which one has no gluten? Whole wheat flour, white flour, or coconut flour?");
+	var qSeven = prompt("What is higher in fats? Peanuts or Berries?");
+	var qEight = prompt("How many cups of water do you drink daily?");
+		//QUESTION SECTION END
+		//POINT SYSTEM BEGIN 
+
+		//POINT SYSTEM END
+		//QUESTION ONE BEGIN
+  	if (qOne.toUpperCase() === "BANANAS"){
+    document.write("1) Yes! Bananas are healthier! <br>");
+	}else if (qOne.toUpperCase() === "FRENCH FRIES"){
+  	document.write("1) You really need to eat some fruits in your life!<br>");
+	}else{
+	document.write("1) I'm sorry, but I cannot help you. No one can.<br>");
+	}
+		//QUESTION ONE END
+		//QUESTION TWO BEGIN
+	if (qTwo.toUpperCase() === "APPLES" || qTwo.toUpperCase() === "APPLE"){
+    document.write("2) Yes! Apples do keep the doctor away! <br>");
+	}else{
+	document.write("2) I'm sorry, but you are hopeless.<br>");
+	}
+		//QUESTION TWO END
+		//QUESTION THREE BEGIN
+  	if (qThree.toUpperCase() === "LEMONS" || qThree.toUpperCase()=== "LEMON"){
+    document.write("3) Lemons are the more acidic fruit. <br>");
+	}else if (qThree.toUpperCase() === "PINEAPPLES" || qThree.toUpperCase()=== "PINEAPPLE"){
+  	document.write("3) No, this is not the more acidic fruit!<br>");
+	}else{
+	document.write("3) Wrong! Sorry!<br>");
+	}
+		//QUESTION THREE END
+		//QUESTION FOUR BEGIN
+	if (qFour.toUpperCase() === "NO"){
+    document.write("4) Oh my goodness, you are correct! Pizza is not a vegetable!<br>");
+	}else{
+	document.write("4) I'm sorry, but you are hopeless!<br>");
+	}
+		//QUESTION FOUR END
+		//QUESTION FIVE BEGIN
+	if (qFive.toUpperCase() === "FRUIT"){
+    document.write("5) Yes! Tomatoes have seeds and therefore is classified as a fruit.<br>");
+	}else{
+	document.write("5) Ah, I'm sorry to break it to you, but it is not a vegetable<br>");
+	}
+		//QUESTION FIVE END
+		//QUESTION SIX BEGIN
+  	if (qSix.toUpperCase() === "COCONUT FLOUR" || qSix.toUpperCase()=== "COCONUT"){
+    document.write("6) Yes! Coconut flour has the minimal amount of gluten of the three. <br>");
+	}else{
+	document.write("6) No, you are incorrect about this one!<br>");
+	}
+		//QUESTION SIX END
+		//QUESTION SEVEN BEGIN
+  	if (qSeven.toUpperCase() === "PEANUTS"){
+    document.write("7) That is correct, peanuts are much higher in fats than berries. <br>");
+	}else{
+	document.write("7) Nope, berries are not higher in fats than peanuts.<br>");
+	}
+		//QUESTION SEVEN END
+		//QUESTION EIGHT BEGIN
+  	if (qEight === parseInt("8") || qEight === "eight"){
+    document.write("8) Yes! That is correct! 8 cups of water is essential!<br>");
+	}else if (qEight < 8){
+  	document.write("8) You need to drink more! It's 8 cups a day!<br>");
+  	}else if (qEight > 8){
+  	document.write("8) You could drink less! It's 8 cups a day!<br>");
+	}else{
+	document.write("8) You should drink 8 cups a day!<br>");
+	}
+		//QUESTION EIGHT END
+	}	//QUIZ END
+quiz();
+</script>
+<br>
+<br>
+</div>
+</center>
+</div>
+</div>
+</div>
+</body>
+</html>
+
